@@ -4,7 +4,6 @@ Wiki du nouveau Modpack de la team Mégalos axé sur le mod Create, la construct
 
 **Changelog complet :** *<https://gist.github.com/N3siOS/2a598e8121d6a4cdd219434be1cc4b7f>*
 
-
 **Liste des mods :** soon
 
 - **Forge :** 39.1.2

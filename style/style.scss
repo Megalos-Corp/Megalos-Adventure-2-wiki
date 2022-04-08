@@ -1,0 +1,463 @@
+@import './caroussel.scss';
+@import './download-load.scss';
+
+* {
+    box-sizing: border-box;
+
+  }
+  
+  body.index {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(31, 31, 31);
+    background-position: top;
+    margin: 0%;
+    width: 100%;
+  }
+  /*
+    -- Debut Navigations du site --
+  */
+  header {
+    background-color: rgba(0, 0, 0, 0.849);
+    text-transform: uppercase;
+    top: 0;
+    height: 50px;
+    z-index: 100;
+    font-size: 15px;
+    font-style: bold;
+}
+
+nav {
+  position: static;
+  display: inline-block;
+  vertical-align: top;
+}
+li.page-link, .page-link-active, .beta-badge, .social-link {
+  display: inline;
+  margin-left: 25px;
+}
+li.beta-badge {
+    background-color: #292b30;
+    border: none;
+    padding: 2px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+#siteVersion{
+    color: #ffa600;
+    font-size: 0.9em;
+  }
+
+#modVersion{
+    color: #ff0000;
+    font-size: 0.8em;
+  }
+
+li.page-link-active {
+  text-decoration-line: underline;
+  color: #f5a906;
+}
+
+li a, .page-link{ 
+    text-decoration: none;
+    font-weight:  800;
+    color: #FBFBFB;
+}
+
+
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+
+img.navimg {
+  width: 48px;
+  writing-mode: horizontal-tb;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+#hamburger, #hamburger-content{
+  display: inline;
+}
+
+#hamburger-button{
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #dddddd;
+  font-size: 30px;
+  padding: 0;
+  float: right;
+  margin-right: 10px;
+}
+
+#hamburger-overlay{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#hamburger-sidebar{
+  display: none;
+  position: fixed;
+  width: 82%;
+  z-index: 20;
+  height: 100%;
+  top: -1px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.795);
+  transform: translatey(-100%);
+  transition: transform .2s ease-out;
+}
+
+#hamburger-sidebar li{
+  margin-top: 10px;
+  display: block;
+  font-size: 1.6rem;
+}
+
+#hamburger-sidebar-header {
+  height: 0px;
+}
+
+#hamburger-sidebar-body {
+padding-top: 50px;
+}
+/* 
+-- Fin Navigations du site -- 
+*/
+/* 
+ -- Debut Main -- 
+*/
+
+div.maintop{
+  background-color: rgb(31, 31, 31);
+  max-width: 99%;
+  margin: 0% 0% 23% 0%;
+  display: block;
+  line-height: 54px;
+
+}
+
+img.img-maintop{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* 
+ -- Fin Main -- 
+*/
+
+/* 
+ -- Debut Footer -- 
+*/
+footer{
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  background-color: rgb(31, 31, 31);
+  bottom: 0px;
+  left: 0px;
+}
+
+.footer p{
+  font-weight: 200;
+  font-size: 1.1em;
+  text-align: center;
+  transition: 0.2s;
+  color: #727272;
+ }
+
+ p.footer-alt {
+  padding-top: 5px;
+  font-weight: 200;
+  font-size: 1.1em;
+  text-align: center;
+  transition: 0.2s;
+  padding-bottom: 3px;
+  color: #dddddd;
+ }
+
+  p.subfooter-alt {
+  font-size: 0.8em;
+  color: #dddddd;
+ }
+
+ .subfooter p{
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 3px;
+  width: 100%;
+  text-align: center;
+ }
+/*
+ -- Fin Footer -- 
+ */
+
+ /*
+ -- Megalos page style -- 
+ */
+
+
+h1.title-mf{
+  font-size: 2.5em;
+  color: white;
+  position: relative;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+p.lead{
+  font-size: 1.5em;
+  color: white;
+  position: relative;
+  left: 0;
+  bottom: 3px;
+  text-align: center;
+}
+
+p.sub-lead{
+  color: rgb(219, 219, 219);
+  font-size: 1.5em;
+  margin: 1% 10% 0 29%;
+}
+script#gist-card{
+    height: 451px;
+    width: 621px;
+}
+#autogrid {
+  /*conteneur*/
+  margin: 1% 10% 0 25%;
+  bottom: 20px;
+  }
+  
+#autogrid-staff {
+    /*conteneur*/
+    margin: 1% 10% 0 12%;
+    bottom: 20px;
+    }
+#autogrid-staff .autog-item {
+      /* conteneur img */
+      justify-content: center;
+      display: inline-block;
+      margin-top: 2%;
+      margin-right: 20px;
+      }
+  #autogrid .autog-item {
+  /* conteneur img */
+  justify-content: center;
+  display: inline-block;
+  margin-top: 2%;
+  margin-right: 15px;
+  }
+  
+  #autogrid .autog-item img {
+  width: 100%;
+  height: auto;
+  border: 0.8px inset #60151500;
+  }
+  #autogrid .autog-item img:hover{
+    transition: 0.1s;
+    border: 0.8px inset #fff01c;
+  }
+
+  p.staff-card{
+    text-align: center;
+  }
+ /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+
+.soon-bgimg {
+  /* Background image */
+  background-image: url('/w3images/forestbridge.jpg');
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+}
+
+/* Position text in the top-left corner */
+.soon-topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.soon-bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.soon-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+} 
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+span#megalos-footer :hover{
+  color: #fff01c;
+}
+// new ux
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  margin-right: 1%;
+  margin-left: 180px;
+  top: auto;
+}
+.column-gist {
+  float: left;
+  width: 75%;
+  margin-right: 1%;
+  margin-left: 13.5%;
+  top: auto;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 3%;
+
+}
+
+.row-index {
+  margin: 10px 0;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  text-align: center;
+  transition: 3ms;
+  transform: scale();
+}
+
+img#card-img-mp :hover{
+  transition: 0.1s;
+  border: 0.8px inset #fff01c;
+  border-radius: 16;
+}
+div.download-card{
+    height: 750px;
+    width: 680px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 6px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card {
+    text-align: center;
+    width: 10%;
+  }
+  
+}
+/* 
+ -- Support Mobile -- 
+*/
+@media screen and (max-width: 1200px) {
+
+  #hamburger-content {
+      display: none;
+  }
+
+  #hamburger-button, #hamburger-sidebar,
+  .hamburger-activated #hamburger-overlay {
+      display: inline;
+      margin-top: 3px;
+  }
+
+  .hamburger-activated #hamburger-sidebar {
+      transform: translateY(0);
+  }
+
+  li.pagelink {
+    display: inline;
+    margin-left: -25px;
+}
+
+  header {
+    height: 50px;
+    width: auto;
+  }
+
+  img.navimg {
+    width: 48px;
+    margin-left: 10px;
+
+  }
+
+  #autogrid {
+    /*conteneur*/
+    position: fixed;
+    left: 25%;
+    top: 5%;
+    margin-bottom: 10px;
+    }
+
+  #autogrid .autog-item img {
+    width: 100%;
+    height: auto;
+    border: 0.8px inset #160d0d;
+    }
+  #autogrid .autog-item img:hover{
+      transition: 0.1s;
+      border: 0.8px inset #fff01c;
+      border-radius: 16;
+    }
+}
