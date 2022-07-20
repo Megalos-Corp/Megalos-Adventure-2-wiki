@@ -1,6 +1,6 @@
-let siteVersion = '0.96'
+let siteVersion = '0.97'
 document.getElementById("siteVersion").innerHTML=siteVersion;
-let modVersion = 'Modpack ALPHA 0.0.12a'
+let modVersion = 'Modpack BETA 0.1.2'
 document.getElementById("modVersion").innerHTML=modVersion;
 
 let content = document.querySelector('#hamburger-content');
