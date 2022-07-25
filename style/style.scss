@@ -398,6 +398,19 @@ div.download-card{
     border-radius: 6px;
 }
 
+a.curse-link{
+  text-decoration: none;
+}
+
+a.github-link{
+  text-decoration: none;
+}
+
+a.link{
+  text-decoration: none;
+}
+
+
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 1200px) {
   .column {
